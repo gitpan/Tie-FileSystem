@@ -2,7 +2,7 @@
 # Copyright 2003-2007 Vadim V. Kouevda,
 #                     "KAITS, Inc."                All rights reserved.
 #-----------------------------------------------------------------------
-# $Id: System.pm,v 2.12 2007/03/21 00:01:14 vadim Exp $
+# $Id: System.pm,v 2.13 2007/03/21 00:11:01 vadim Exp $
 #-----------------------------------------------------------------------
 # Authors:    Vadim V. Kouevda   initdotd@gmail.com
 #-----------------------------------------------------------------------
@@ -20,7 +20,7 @@ use             Data::Dumper;
 
 #-----------------------------------------------------------------------
 
-$VERSION        = sprintf("%d.%d", q$Revision: 2.12 $ =~ /(\d+)\.(\d+)/);
+$VERSION        = sprintf("%d.%d", q$Revision: 2.13 $ =~ /(\d+)\.(\d+)/);
 @ISA            = qw(Exporter);
 @EXPORT         = qw(passwd);
 
@@ -80,7 +80,7 @@ following structure: $data{'etc'}{'passwd'}{$username}{$field}.
 
 =head1 USING THE MODULE
 
-This modules is used internally by KA::Tie::Dir.
+This modules is used internally by Tie::FileSystem.
 
 =head1 BUGS
 
@@ -124,15 +124,15 @@ The latest version can be obtained from CPAN
 
 =head1 SEE ALSO
 
-KA::Tie::Dir(3)
+Tie::FileSystem(3)
 
 =cut
 
 #-----------------------------------------------------------------------
-# $Id: System.pm,v 2.12 2007/03/21 00:01:14 vadim Exp $
+# $Id: System.pm,v 2.13 2007/03/21 00:11:01 vadim Exp $
 #-----------------------------------------------------------------------
 # $Log: System.pm,v $
-# Revision 2.12  2007/03/21 00:01:14  vadim
+# Revision 2.13  2007/03/21 00:11:01  vadim
 # Cleaning POD from KA::Tie::Dir references
 #
 # Revision 2.11  2007/03/20 21:17:08  vadim

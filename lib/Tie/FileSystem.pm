@@ -2,7 +2,7 @@
 # Copyright 2003-2007 Vadim V. Kouevda,
 #                     "KAITS, Inc."                All rights reserved.
 #-----------------------------------------------------------------------
-# $Id: FileSystem.pm,v 2.14 2007/03/21 00:01:14 vadim Exp $
+# $Id: FileSystem.pm,v 2.15 2007/03/21 00:11:01 vadim Exp $
 #-----------------------------------------------------------------------
 # Authors:    Vadim V. Kouevda   initdotd@gmail.com
 #-----------------------------------------------------------------------
@@ -26,7 +26,7 @@ use             Tie::FileSystem::System;# Subroutines for system files
 
 #-----------------------------------------------------------------------
 
-$VERSION        = sprintf("%d.%d", q$Revision: 2.14 $ =~ /(\d+)\.(\d+)/);
+$VERSION        = sprintf("%d.%d", q$Revision: 2.15 $ =~ /(\d+)\.(\d+)/);
 @ISA            = qw(Tie::FileSystem::System Tie::Hash Exporter);
 @EXPORT         = qw();                 # Everything's private
 
@@ -520,10 +520,10 @@ Tie::FileSystem::System(3), Tie::File(3)
 =cut
 
 #-----------------------------------------------------------------------
-# $Id: FileSystem.pm,v 2.14 2007/03/21 00:01:14 vadim Exp $
+# $Id: FileSystem.pm,v 2.15 2007/03/21 00:11:01 vadim Exp $
 #-----------------------------------------------------------------------
 # $Log: FileSystem.pm,v $
-# Revision 2.14  2007/03/21 00:01:14  vadim
+# Revision 2.15  2007/03/21 00:11:01  vadim
 # Cleaning POD from KA::Tie::Dir references
 #
 # Revision 2.13  2007/03/20 21:45:19  vadim
