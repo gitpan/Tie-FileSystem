@@ -2,7 +2,7 @@
 # Copyright 2003-2007 Vadim V. Kouevda,
 #                     "KAITS, Inc."                All rights reserved.
 #-----------------------------------------------------------------------
-# $Id: FileSystem.pm,v 2.13 2007/03/20 21:45:19 vadim Exp $
+# $Id: FileSystem.pm,v 2.14 2007/03/21 00:01:14 vadim Exp $
 #-----------------------------------------------------------------------
 # Authors:    Vadim V. Kouevda   initdotd@gmail.com
 #-----------------------------------------------------------------------
@@ -26,7 +26,7 @@ use             Tie::FileSystem::System;# Subroutines for system files
 
 #-----------------------------------------------------------------------
 
-$VERSION        = sprintf("%d.%d", q$Revision: 2.13 $ =~ /(\d+)\.(\d+)/);
+$VERSION        = sprintf("%d.%d", q$Revision: 2.14 $ =~ /(\d+)\.(\d+)/);
 @ISA            = qw(Tie::FileSystem::System Tie::Hash Exporter);
 @EXPORT         = qw();                 # Everything's private
 
@@ -520,18 +520,20 @@ Tie::FileSystem::System(3), Tie::File(3)
 =cut
 
 #-----------------------------------------------------------------------
-# $Id: FileSystem.pm,v 2.13 2007/03/20 21:45:19 vadim Exp $
+# $Id: FileSystem.pm,v 2.14 2007/03/21 00:01:14 vadim Exp $
 #-----------------------------------------------------------------------
 # $Log: FileSystem.pm,v $
+# Revision 2.14  2007/03/21 00:01:14  vadim
+# Cleaning POD from KA::Tie::Dir references
+#
 # Revision 2.13  2007/03/20 21:45:19  vadim
-# Fixed small insignificant bug with debuggin in NEXTKEY
+# Fixed small insignificant bug with debuging in NEXTKEY
 #
 # Revision 2.12  2007/03/20 21:20:50  vadim
 # Upon suggestion of Steven Schubiger (schubiger@gmail.com) added indents
-# to code in POD.
+# to displaying code in POD.
 #
 # Revision 2.11  2007/03/20 21:17:08  vadim
 # Convert to Tie:FileSystem name space
-#
 #-----------------------------------------------------------------------
 1;

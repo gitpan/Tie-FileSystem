@@ -2,7 +2,7 @@
 # Copyright 2003-2007 Vadim V. Kouevda,
 #                     "KAITS, Inc."                All rights reserved.
 #-----------------------------------------------------------------------
-# $Id: System.pm,v 2.11 2007/03/20 21:17:08 vadim Exp $
+# $Id: System.pm,v 2.12 2007/03/21 00:01:14 vadim Exp $
 #-----------------------------------------------------------------------
 # Authors:    Vadim V. Kouevda   initdotd@gmail.com
 #-----------------------------------------------------------------------
@@ -20,7 +20,7 @@ use             Data::Dumper;
 
 #-----------------------------------------------------------------------
 
-$VERSION        = sprintf("%d.%d", q$Revision: 2.11 $ =~ /(\d+)\.(\d+)/);
+$VERSION        = sprintf("%d.%d", q$Revision: 2.12 $ =~ /(\d+)\.(\d+)/);
 @ISA            = qw(Exporter);
 @EXPORT         = qw(passwd);
 
@@ -53,16 +53,16 @@ sub passwd {
 
 =head1 NAME
 
-KA::Tie::Dir::System - Helper functions for reading in and processing
-of system files in the KA::Tie::Dir framework.
+Tie::FileSystem::System - Helper functions for reading in and processing
+of system files in the Tie::FileSystem framework.
 
 =head1 SYNOPSIS
 
-This module is not used separately from KA::Tie::Dir.
+This module is not used separately from Tie::FileSystem.
 
 =head1 DESCRIPTION
 
-KA::Tie::Dir represents file system as a Perl hash. Each hash key
+Tie::FileSystem represents file system as a Perl hash. Each hash key
 corresponds to name of a directory or a file. For example, for a file
 "/etc/passwd" it will be $data{'etc'}{'passwd'}. Contents of the file
 "/etc/passwd" becomes a value corresponding to the
@@ -73,7 +73,7 @@ files in the directory as keys. Standard procedure for files is to store
 a contents of the file in the scalar value.
 
 For certain files with known structure it is possible to define
-subroutines for special handling. "KA::Tie::Dir::System" defines
+subroutines for special handling. Tie::FileSystem::System" defines
 subroutines for handling system files and, for starters, has 'passwd'
 handling subroutine. "/etc/passwd" can be represented asa hash with
 following structure: $data{'etc'}{'passwd'}{$username}{$field}.
@@ -129,11 +129,13 @@ KA::Tie::Dir(3)
 =cut
 
 #-----------------------------------------------------------------------
-# $Id: System.pm,v 2.11 2007/03/20 21:17:08 vadim Exp $
+# $Id: System.pm,v 2.12 2007/03/21 00:01:14 vadim Exp $
 #-----------------------------------------------------------------------
 # $Log: System.pm,v $
+# Revision 2.12  2007/03/21 00:01:14  vadim
+# Cleaning POD from KA::Tie::Dir references
+#
 # Revision 2.11  2007/03/20 21:17:08  vadim
 # Convert to Tie:FileSystem name space
-#
 #-----------------------------------------------------------------------
 1;
